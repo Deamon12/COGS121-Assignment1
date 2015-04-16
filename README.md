@@ -1,7 +1,4 @@
-Instagram Example
+Assignment 1 - Deagan Monahan
 ===========
-
-Discussion 1:
-
-Instagram example for COGS 121
-Every commit will provide a step by step introduction to creating a web application overview.
+COGS 121 - SP15
+A11840779
