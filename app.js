@@ -23,7 +23,7 @@ var hashtag = require('./hashtag');
 dotenv.load();
 var INSTAGRAM_CLIENT_ID = process.env.INSTAGRAM_CLIENT_ID;
 var INSTAGRAM_CLIENT_SECRET = process.env.INSTAGRAM_CLIENT_SECRET;
-var INSTAGRAM_CALLBACK_URL = "http://127.0.0.1:3000/auth/instagram/callback";
+var INSTAGRAM_CALLBACK_URL = "https://assignment1-dsmonaha.herokuapp.com/auth/instagram/callback";
 Instagram.set('client_id', INSTAGRAM_CLIENT_ID);
 Instagram.set('client_secret', INSTAGRAM_CLIENT_SECRET);
 
@@ -33,7 +33,7 @@ Instagram.set('client_secret', INSTAGRAM_CLIENT_SECRET);
 /** Book of Faces */
 var FACEBOOK_APP_ID = process.env.FACEBOOK_CLIENT_ID;
 var FACEBOOK_APP_SECRET = process.env.FACEBOOK_CLIENT_SECRET;
-var FACEBOOK_CALLBACK_URL = "http://127.0.0.1:3000/auth/facebook/callback";
+var FACEBOOK_CALLBACK_URL = "https://assignment1-dsmonaha.herokuapp.com/auth/facebook/callback";
 
 
 var passport = require('passport')
