@@ -1,0 +1,116 @@
+ <!DOCTYPE html>
+<html lang="en">
+ <head>
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/deagan.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css' />
+	
+	
+	
+	
+    </head>
+
+    
+    <body>
+    <title>Deagan Monahan - COGS121 - 1</title>
+	<div class="container">
+	
+	
+	  <!-- Top bar -->
+	  <div class="codrops-top">
+		
+		<span class="left">
+			<a>Deagan Monahan</a>
+		    <a><strong>Assignment 1</strong></a>
+		    
+		</span>
+		<span class="right">
+		<a href="/logout"><strong>Logout</strong></a>
+		
+		<a>{{user.username}}{{user.displayName}}</a>
+		
+		
+		
+		</span>
+		
+		<div class="clr">
+		
+		</div>
+	    </div>
+	    <!--/ Top bar -->
+      
+			
+    
+    </div>
+    
+    <div class="container demo-1">
+    
+      <span> 
+<h1>ID: {{user.id}}</h1>
+<h1>Username: {{user.username}}</h1>
+<p>Name:{{user.displayName}}</p>
+<h1>ID: {{user.link}}</h1>
+<h1>https://graph.facebook.com/{{user.id}}/picture?type=normal</h1>
+
+</span>
+
+<a href="/instagramphotos">Get insta feed</a>
+<br><br>
+<a href="/feed">Get FB feed</a>
+    
+    
+    
+    
+    <ul class="grid cs-style-1">
+				<li>
+					<figure>
+						<img src="2.jpg" alt="img01">
+						<figcaption>
+							<h3>Camera</h3>
+							<span>Jacob Cummings</span>
+							<a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+						</figcaption>
+					</figure>
+				</li>
+				
+				<li>
+					<figure>
+						<img src="https://graph.facebook.com/{{user.id}}/picture?type=large" alt="img05">
+						<figcaption>
+							<h3>Safari</h3>
+							<span>Jacob Cummings</span>
+							<a href="http://dribbble.com/shots/1116775-Safari">Take a look</a>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="http://d3o47n6kn1r59u.cloudfront.net/images/dogbreeds/large/Bull-Terrier.jpg" alt="img03">
+						<figcaption>
+							<h3>Phone</h3>
+							<span>Jacob Cummings</span>
+							<a href="http://dribbble.com/shots/1117308-Phone">Take a look</a>
+						</figcaption>
+					</figure>
+				</li>
+				
+			</ul>
+    
+    
+    
+    
+    </div>
+    
+    
+    
+       
+ 
+
+
+</body>
+
+</html>

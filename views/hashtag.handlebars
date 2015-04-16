@@ -1,0 +1,149 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Instagram hashtag</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+      <link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+      <!-- UI Styles-->
+	<link rel="stylesheet" type="text/css" href="css/deagan.css" />
+      
+</head>
+
+<body>
+
+    
+
+      {{#if hashtagValue}}
+      <div class="container">
+      
+      <!-- Top bar -->
+	  <div class="codrops-top">
+		<span class="left">
+			<a>Deagan Monahan</a>
+		    <a><strong>Assignment 0</strong></a>
+		</span>
+		<span class="right">
+			
+		    <a href="/auth/instagram"><strong>Back to Instagram Account</strong></a>
+		</span>
+		<div class="clr"></div>
+	    </div>
+      <!--/ Top bar -->
+      
+      
+      
+      
+      
+      <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	<span class="sr-only">Toggle navigation</span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+	<!--<li class="active"><a href="#"><span class="sr-only">(current)</span></a></li>-->
+	
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+	
+	
+	<form class="navbar-form navbar-left" id="viewHashTag" role="form" method="post" action="/hashtag">
+	<div class="form-group" class="container-searchform">
+	  <input type="text" class="form-control" id="hashtag" placeholder="hashtag" name="hashtag">
+	  
+	</div>
+	
+	<button type="submit" class="btn btn-default" id="submitBtn" value="View Hashtag">Search</button>
+      </form>
+      
+      
+      
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+      
+      
+      
+        <header>
+		<h1><span>You are checking out </span> #{{hashtagValue}}</h1>
+				
+	</header>
+	
+	
+	</div>
+	<!--
+	<div class="container">
+        <h1>What hashtag would you like to see?</h1>
+
+        <form id="viewHashTag" role="form" method="post" action="/hashtag">
+            <h3>View Hashtag</h3>
+            <div class="form-group">
+              <input type="text" class="form-control" id="hashtag" placeholder="hashtag" name="hashtag">
+            </div>
+            <input type="submit" id="submitBtn" class="btn btn-default" value="View Hashtag"></input>
+        </form>
+    </div>
+	-->
+	
+	
+	
+	
+	<div class="container demo-1">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ul class="grid cs-style-1">
+				{{#each imageArray}}
+				<li>
+					<figure>
+						
+						<img src="{{url}}" height="300px">
+						<figcaption>
+							<!--<h3 class ="giveMeEllipsis">{{../hashtagValue}}</h3>
+							<span>{{from}}</span>-->
+							<a target="_blank" href="{{url}}">Open Image</a>
+						</figcaption>
+					</figure>
+				</li>
+				{{/each}}
+  
+    
+			</ul>
+	
+	</div>
+        
+      
+       
+      {{/if}}
+     
+    <script src="js/toucheffects.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/additional-methods.min.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
