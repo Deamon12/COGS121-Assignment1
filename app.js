@@ -471,7 +471,11 @@ app.get('/feed', ensureAuthenticated, function(req, res){
 
 
 
-app.get('/auth/facebook', passport.authenticate('facebook'));
+//app.get('/auth/facebook', passport.authenticate('facebook'));
+app.get('/auth/facebook',
+	passport.authenticate('facebook', { scope: ['read_stream', 'publish_actions', 'user_photos'] })
+);
+
 
 // Facebook will redirect the user to this URL after approval.  Finish the
 // authentication process by attempting to obtain an access token.  If
